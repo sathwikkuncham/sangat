@@ -4,7 +4,7 @@ import { MobileApp } from '@/consumer/MobileApp';
 import { Icon } from '@/components/primitives';
 import { useTheme } from '@/theme';
 import { usePwaInstall } from '@/pwa';
-import { breakpoints, useIsDesktop, useIsMobile } from '@/hooks/useMediaQuery';
+import { useIsDesktop, useIsMobile } from '@/hooks/useMediaQuery';
 
 const PHONE_WIDTH = 390;
 const PHONE_HEIGHT = 844;
@@ -296,7 +296,7 @@ function BrandPanel() {
       }}
     >
       <div className="eyebrow" style={{ color: 'var(--plum-700)' }}>
-        SAKHI · CONSUMER · PWA
+        GROUPS THAT GATHER
       </div>
       <h2
         style={{
@@ -309,15 +309,12 @@ function BrandPanel() {
           color: 'var(--fg-1)',
         }}
       >
-        Run a kitty in escrow.
-        <br />
-        Vote the venue with ranked-choice.
-        <br />
-        Settle when the bill arrives.
+        A kitty for the
+        <em style={{ fontStyle: 'italic', color: 'var(--rose-700)' }}> calendar-keepers</em>.
       </h2>
       <p className="p-small" style={{ marginTop: 0 }}>
-        The consumer surface is built mobile-first as a Progressive Web App. Drop it on a phone
-        home screen, scan the install QR, or interact with it right here in the preview.
+        Pool monthly contributions in escrow, vote venues with ranked-choice, and settle the bill
+        cleanly when the party is done.
       </p>
       <ul
         style={{
@@ -329,9 +326,9 @@ function BrandPanel() {
           gap: 10,
         }}
       >
-        <Bullet>Bottom-tab navigation: Groups · Parties · Wallet · You</Bullet>
-        <Bullet>FAB launches the 3-step new-kitty wizard</Bullet>
-        <Bullet>Light + dark themes via the rose &amp; plum tokens</Bullet>
+        <Bullet>Auto-debit when a member skips reminders.</Bullet>
+        <Bullet>Off-peak group rates at the city's best restaurants.</Bullet>
+        <Bullet>KYC-verified sakhi-s, invited from your phone book.</Bullet>
       </ul>
     </aside>
   );
@@ -339,8 +336,8 @@ function BrandPanel() {
 
 function FeaturePanel() {
   const flow: Array<{ title: string; sub: string }> = [
-    { title: 'Tuesday Lunch Club', sub: 'Open the kitty card, then "Vote on venue".' },
-    { title: 'Rank your picks', sub: 'Reorder restaurants — ranked-choice settles the tie.' },
+    { title: 'Open Tuesday Lunch Club', sub: 'Tap the kitty card to see the pool.' },
+    { title: 'Vote on venue', sub: 'Reorder restaurants — ranked-choice settles the tie.' },
     { title: 'Saffron Trail wins', sub: 'Confirm to lock the off-peak slot.' },
     { title: 'Settle up', sub: 'Bill splits cleanly with auto-nudge for stragglers.' },
   ];
@@ -361,7 +358,16 @@ function FeaturePanel() {
       }}
     >
       <div className="eyebrow">TRY THIS FLOW</div>
-      <ol style={{ margin: 0, paddingLeft: 0, listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 10 }}>
+      <ol
+        style={{
+          margin: 0,
+          paddingLeft: 0,
+          listStyle: 'none',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: 10,
+        }}
+      >
         {flow.map((step, i) => (
           <li key={step.title} style={{ display: 'flex', gap: 10 }}>
             <span
@@ -388,17 +394,6 @@ function FeaturePanel() {
           </li>
         ))}
       </ol>
-      <div
-        style={{
-          marginTop: 8,
-          paddingTop: 12,
-          borderTop: '1px solid var(--ink-200)',
-          fontSize: 11,
-          color: 'var(--fg-3)',
-        }}
-      >
-        Below {breakpoints.mobile}px the side panels disappear and the app fills the viewport.
-      </div>
     </aside>
   );
 }

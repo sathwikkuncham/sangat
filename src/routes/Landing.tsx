@@ -113,18 +113,6 @@ export function Landing() {
         </div>
       </main>
 
-      <footer
-        style={{
-          maxWidth: 1200,
-          margin: '0 auto',
-          paddingTop: 64,
-          paddingBottom: 24,
-          color: 'var(--fg-3)',
-          fontSize: 12,
-        }}
-      >
-        Designed in HTML/CSS/JS · ported to React + Vite + TypeScript · ready as a PWA.
-      </footer>
     </div>
   );
 }

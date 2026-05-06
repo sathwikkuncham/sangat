@@ -1,9 +1,9 @@
 {
-  "name": "sakhi-prototype",
+  "name": "sakhi",
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "description": "Sakhi — end-to-end prototype. Consumer mobile (PWA) + Partner desktop, light & dark.",
+  "description": "Sakhi — kitty groups, off-peak parties, and a partner dashboard for restaurants.",
   "scripts": {
     "dev": "vite",
     "build": "npm run generate:pwa-assets && tsc -b && vite build",
