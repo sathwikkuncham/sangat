@@ -27,7 +27,7 @@ export function Bookings() {
             <button
               key={f}
               type="button"
-              className="sakhi-focus-ring"
+              className="sangat-focus-ring"
               style={{
                 padding: '8px 14px',
                 borderRadius: 999,
@@ -127,7 +127,7 @@ function BookingTable() {
           </div>
           <button
             type="button"
-            className="sakhi-focus-ring"
+            className="sangat-focus-ring"
             style={{
               padding: '6px 12px',
               fontSize: 12,
@@ -192,7 +192,7 @@ function BookingCard({ booking: u }: { booking: BookingRow }) {
       </div>
       <button
         type="button"
-        className="sakhi-focus-ring"
+        className="sangat-focus-ring"
         style={{
           padding: '8px 12px',
           fontSize: 12,

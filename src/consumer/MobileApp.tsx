@@ -108,7 +108,7 @@ export function MobileApp() {
         background: 'var(--bg)',
       }}
     >
-      <div className="sakhi-scroll" style={{ position: 'absolute', inset: 0, overflowY: 'auto' }}>
+      <div className="sangat-scroll" style={{ position: 'absolute', inset: 0, overflowY: 'auto' }}>
         {screen}
       </div>
       <BottomNav tab={tab} onTab={setTab} onFab={() => setView({ name: 'new' })} />

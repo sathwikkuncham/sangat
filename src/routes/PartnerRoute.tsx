@@ -11,7 +11,7 @@ export function PartnerRoute() {
       <Link
         to="/"
         aria-label="Back to surface picker"
-        className="sakhi-link-reset sakhi-focus-ring"
+        className="sangat-link-reset sangat-focus-ring"
         style={{
           position: 'fixed',
           // On compact viewports the partner mobile top bar lives at the top,

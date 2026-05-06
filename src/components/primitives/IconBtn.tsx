@@ -13,7 +13,7 @@ export function IconBtn({ icon, label, size = 18, ...rest }: IconBtnProps) {
       {...rest}
       aria-label={label}
       title={label}
-      className={`sakhi-focus-ring${rest.className ? ` ${rest.className}` : ''}`}
+      className={`sangat-focus-ring${rest.className ? ` ${rest.className}` : ''}`}
       style={{
         width: 36,
         height: 36,

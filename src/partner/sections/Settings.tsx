@@ -28,7 +28,7 @@ export function Settings() {
         <img src="/assets/icons/lotus.svg" width={40} height={40} alt="" />
         <div style={{ flex: 1 }}>
           <div style={{ fontWeight: 600, fontSize: 14, color: 'var(--rose-700)' }}>
-            Sakhi Partner+ pilot
+            Sangat Partner+ pilot
           </div>
           <div style={{ fontSize: 12, color: 'var(--fg-2)', marginTop: 2 }}>
             Yield-managed packages, AI-suggested off-peak slots, priority placement.
@@ -98,7 +98,7 @@ function Field({ field, last, isMobile }: { field: OutletField; last: boolean; i
           <div className="eyebrow" style={{ fontSize: 10 }}>{field.label}</div>
           <button
             type="button"
-            className="sakhi-focus-ring"
+            className="sangat-focus-ring"
             style={{
               padding: '4px 10px',
               fontSize: 11,
@@ -133,7 +133,7 @@ function Field({ field, last, isMobile }: { field: OutletField; last: boolean; i
       <div style={{ fontSize: 14, color: 'var(--fg-1)' }}>{field.value}</div>
       <button
         type="button"
-        className="sakhi-focus-ring"
+        className="sangat-focus-ring"
         style={{
           padding: '4px 10px',
           fontSize: 11,

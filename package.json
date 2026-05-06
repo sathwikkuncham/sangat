@@ -1,9 +1,9 @@
 {
-  "name": "sakhi",
+  "name": "sangat",
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "description": "Sakhi — kitty groups, off-peak parties, and a partner dashboard for restaurants.",
+  "description": "Sangat — kitty groups, off-peak parties, and a partner dashboard for restaurants.",
   "scripts": {
     "dev": "vite",
     "build": "npm run generate:pwa-assets && tsc -b && vite build",

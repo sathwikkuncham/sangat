@@ -64,7 +64,7 @@ export function PartnerApp() {
       ) : (
         <Sidebar active={active} onChange={setActive} />
       )}
-      <main className="sakhi-scroll" style={{ flex: 1, overflow: 'auto', background: 'var(--bg)' }}>
+      <main className="sangat-scroll" style={{ flex: 1, overflow: 'auto', background: 'var(--bg)' }}>
         {active === 'overview' && <Overview />}
         {active === 'inventory' && <Inventory />}
         {active === 'bookings' && <Bookings />}

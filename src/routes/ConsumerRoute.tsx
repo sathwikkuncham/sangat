@@ -29,7 +29,7 @@ export function ConsumerRoute() {
   }
 
   return (
-    <div className="sakhi-stage" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+    <div className="sangat-stage" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
       <ConsumerHeader
         canInstall={canInstall}
         onInstall={promptInstall}
@@ -99,7 +99,7 @@ function ConsumerHeader({
     >
       <Link
         to="/"
-        className="sakhi-link-reset sakhi-focus-ring"
+        className="sangat-link-reset sangat-focus-ring"
         style={{
           display: 'inline-flex',
           alignItems: 'center',
@@ -122,7 +122,7 @@ function ConsumerHeader({
           <button
             type="button"
             onClick={onInstall}
-            className="sakhi-focus-ring"
+            className="sangat-focus-ring"
             style={{
               padding: '6px 14px',
               fontSize: 12,
@@ -134,14 +134,14 @@ function ConsumerHeader({
               cursor: 'pointer',
             }}
           >
-            Install Sakhi
+            Install Sangat
           </button>
         )}
         <button
           type="button"
           onClick={onToggleTheme}
           aria-label="Toggle theme"
-          className="sakhi-focus-ring"
+          className="sangat-focus-ring"
           style={{
             width: 36,
             height: 36,
@@ -188,7 +188,7 @@ function LayoutSwitcher({ value, onChange }: { value: Layout; onChange: (next: L
             role="radio"
             aria-checked={active}
             onClick={() => onChange(o.id)}
-            className="sakhi-focus-ring"
+            className="sangat-focus-ring"
             style={{
               padding: '5px 12px',
               fontSize: 12,
@@ -285,7 +285,7 @@ function SidePanel({ slot }: { slot: 'left' | 'right' }) {
 function BrandPanel() {
   return (
     <aside
-      aria-label="About Sakhi"
+      aria-label="About Sangat"
       style={{
         maxWidth: 360,
         display: 'flex',
@@ -328,7 +328,7 @@ function BrandPanel() {
       >
         <Bullet>Auto-debit when a member skips reminders.</Bullet>
         <Bullet>Off-peak group rates at the city's best restaurants.</Bullet>
-        <Bullet>KYC-verified sakhi-s, invited from your phone book.</Bullet>
+        <Bullet>KYC-verified members, invited from your phone book.</Bullet>
       </ul>
     </aside>
   );

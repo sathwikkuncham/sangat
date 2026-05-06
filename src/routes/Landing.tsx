@@ -5,7 +5,7 @@ import { useTheme } from '@/theme';
 export function Landing() {
   const { theme, toggle } = useTheme();
   return (
-    <div className="sakhi-stage" style={{ minHeight: '100vh', padding: '24px clamp(20px, 6vw, 64px)' }}>
+    <div className="sangat-stage" style={{ minHeight: '100vh', padding: '24px clamp(20px, 6vw, 64px)' }}>
       <header
         style={{
           display: 'flex',
@@ -17,7 +17,7 @@ export function Landing() {
         }}
       >
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-          <img src="/assets/logo/sakhi-mark.svg" width={36} height={36} alt="" />
+          <img src="/assets/logo/sangat-mark.svg" width={36} height={36} alt="" />
           <div
             style={{
               fontFamily: 'var(--font-display)',
@@ -29,14 +29,14 @@ export function Landing() {
               lineHeight: 1,
             }}
           >
-            sakhi
+            sangat
           </div>
         </div>
         <button
           type="button"
           onClick={toggle}
           aria-label="Toggle theme"
-          className="sakhi-focus-ring"
+          className="sangat-focus-ring"
           style={{
             width: 40,
             height: 40,
@@ -84,7 +84,7 @@ export function Landing() {
           className="p-lead"
           style={{ marginTop: 16, maxWidth: 580, color: 'var(--fg-2)' }}
         >
-          Sakhi runs your kitty in escrow, votes the venue with ranked-choice, and books the
+          Sangat runs your kitty in escrow, votes the venue with ranked-choice, and books the
           off-peak slot at the city's best restaurants — split cleanly when the bill arrives.
         </p>
 
@@ -107,7 +107,7 @@ export function Landing() {
           <SurfaceCard
             to="/partner"
             badge="DESKTOP"
-            title="Sakhi Partner dashboard"
+            title="Sangat Partner dashboard"
             sub="Off-peak yield · bookings · reports"
           />
         </div>
@@ -129,7 +129,7 @@ function SurfaceCard({ to, badge, title, sub, primary }: SurfaceCardProps) {
   return (
     <Link
       to={to}
-      className="sakhi-link-reset sakhi-focus-ring"
+      className="sangat-link-reset sangat-focus-ring"
       style={{
         display: 'block',
         background: primary ? 'var(--rose-600)' : 'var(--paper)',

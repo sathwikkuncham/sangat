@@ -47,7 +47,7 @@ export function BottomNav({ tab, onTab, onFab }: BottomNavProps) {
         onClick={onFab}
         aria-label="Start a new kitty"
         title="Start a new kitty"
-        className="sakhi-focus-ring"
+        className="sangat-focus-ring"
         style={{
           background: 'var(--rose-600)',
           color: 'var(--on-primary)',
@@ -82,7 +82,7 @@ function TabButton({ item, active, onClick }: TabButtonProps) {
     <button
       onClick={onClick}
       aria-current={active ? 'page' : undefined}
-      className="sakhi-focus-ring"
+      className="sangat-focus-ring"
       style={{
         flex: 1,
         display: 'flex',

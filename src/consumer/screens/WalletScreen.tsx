@@ -7,7 +7,7 @@ export function WalletScreen() {
       <ScreenHeader title="Wallet" eyebrow="MARCH" trailing={<IconBtn icon="more" label="More" />} />
       <div style={{ padding: '0 20px' }}>
         <Card variant="money" style={{ padding: 22 }}>
-          <div className="eyebrow" style={{ fontSize: 11 }}>SAKHI BALANCE</div>
+          <div className="eyebrow" style={{ fontSize: 11 }}>SANGAT BALANCE</div>
           <div
             style={{
               fontFamily: 'var(--font-display)',
@@ -27,7 +27,7 @@ export function WalletScreen() {
           <div style={{ marginTop: 14, display: 'flex', gap: 10 }}>
             <Btn size="sm">Add money</Btn>
             <Btn size="sm" variant="secondary">Withdraw</Btn>
-            <Btn size="sm" variant="ghost">Sakhi Gold</Btn>
+            <Btn size="sm" variant="ghost">Sangat Gold</Btn>
           </div>
         </Card>
 
@@ -40,7 +40,7 @@ export function WalletScreen() {
           }}
         >
           <Card style={{ padding: 14 }}>
-            <div className="eyebrow" style={{ fontSize: 10 }}>SAKHI GOLD</div>
+            <div className="eyebrow" style={{ fontSize: 10 }}>SANGAT GOLD</div>
             <div
               style={{
                 fontFamily: 'var(--font-display)',

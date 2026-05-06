@@ -13,16 +13,16 @@ export default defineConfig({
       registerType: 'autoUpdate',
       injectRegister: false,
       includeAssets: [
-        'assets/logo/sakhi-mark.svg',
-        'assets/logo/sakhi-wordmark.svg',
+        'assets/logo/sangat-mark.svg',
+        'assets/logo/sangat-wordmark.svg',
         'assets/icons/lotus.svg',
         'assets/icons/kitty-pot.svg',
         'assets/patterns/jaali.svg',
       ],
       manifest: {
         id: '/?source=pwa',
-        name: 'Sakhi — kitty groups & parties',
-        short_name: 'Sakhi',
+        name: 'Sangat — kitty groups & parties',
+        short_name: 'Sangat',
         description:
           'Run a kitty in escrow, vote venues with ranked-choice, and book the city\'s best restaurants at off-peak rates.',
         start_url: '/app?source=pwa',
@@ -53,7 +53,7 @@ export default defineConfig({
             purpose: 'maskable',
           },
           {
-            src: '/assets/logo/sakhi-mark.svg',
+            src: '/assets/logo/sangat-mark.svg',
             sizes: 'any',
             type: 'image/svg+xml',
             purpose: 'any',
@@ -81,13 +81,13 @@ export default defineConfig({
           {
             urlPattern: ({ url }) => url.origin === 'https://fonts.googleapis.com',
             handler: 'StaleWhileRevalidate',
-            options: { cacheName: 'sakhi-google-fonts-stylesheets' },
+            options: { cacheName: 'sangat-google-fonts-stylesheets' },
           },
           {
             urlPattern: ({ url }) => url.origin === 'https://fonts.gstatic.com',
             handler: 'CacheFirst',
             options: {
-              cacheName: 'sakhi-google-fonts-files',
+              cacheName: 'sangat-google-fonts-files',
               expiration: { maxEntries: 30, maxAgeSeconds: 60 * 60 * 24 * 365 },
               cacheableResponse: { statuses: [0, 200] },
             },
@@ -96,7 +96,7 @@ export default defineConfig({
             urlPattern: ({ request }) => request.destination === 'image',
             handler: 'StaleWhileRevalidate',
             options: {
-              cacheName: 'sakhi-images',
+              cacheName: 'sangat-images',
               expiration: { maxEntries: 60, maxAgeSeconds: 60 * 60 * 24 * 30 },
             },
           },

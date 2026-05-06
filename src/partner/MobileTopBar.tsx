@@ -24,7 +24,7 @@ export function MobileTopBar({ onOpenMenu, sectionLabel }: MobileTopBarProps) {
         type="button"
         onClick={onOpenMenu}
         aria-label="Open navigation menu"
-        className="sakhi-focus-ring"
+        className="sangat-focus-ring"
         style={{
           width: 36,
           height: 36,
@@ -41,7 +41,7 @@ export function MobileTopBar({ onOpenMenu, sectionLabel }: MobileTopBarProps) {
         <HamburgerIcon />
       </button>
       <div style={{ display: 'flex', alignItems: 'center', gap: 10, flex: 1, minWidth: 0 }}>
-        <img src="/assets/logo/sakhi-mark.svg" width={28} height={28} alt="" />
+        <img src="/assets/logo/sangat-mark.svg" width={28} height={28} alt="" />
         <div style={{ display: 'flex', flexDirection: 'column', minWidth: 0 }}>
           <span
             style={{
@@ -53,7 +53,7 @@ export function MobileTopBar({ onOpenMenu, sectionLabel }: MobileTopBarProps) {
               color: 'var(--fg-1)',
             }}
           >
-            sakhi · partner
+            sangat · partner
           </span>
           <span
             style={{

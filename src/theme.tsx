@@ -16,7 +16,7 @@ interface ThemeContextValue {
   toggle: () => void;
 }
 
-const STORAGE_KEY = 'sakhi.theme';
+const STORAGE_KEY = 'sangat.theme';
 
 const ThemeContext = createContext<ThemeContextValue | undefined>(undefined);
 

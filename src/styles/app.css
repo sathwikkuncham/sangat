@@ -1,5 +1,5 @@
 /* =========================================================================
-   App-level layout helpers — built on the Sakhi design tokens.
+   App-level layout helpers — built on the Sangat design tokens.
    ========================================================================= */
 
 html, body, #root {
@@ -22,19 +22,19 @@ input, textarea {
 }
 
 /* Hide scrollbars on scrollable mobile surfaces while keeping behaviour. */
-.sakhi-scroll {
+.sangat-scroll {
   scrollbar-width: thin;
   scrollbar-color: var(--ink-300) transparent;
 }
-.sakhi-scroll::-webkit-scrollbar { width: 6px; height: 6px; }
-.sakhi-scroll::-webkit-scrollbar-track { background: transparent; }
-.sakhi-scroll::-webkit-scrollbar-thumb {
+.sangat-scroll::-webkit-scrollbar { width: 6px; height: 6px; }
+.sangat-scroll::-webkit-scrollbar-track { background: transparent; }
+.sangat-scroll::-webkit-scrollbar-thumb {
   background: var(--ink-300);
   border-radius: 999px;
 }
 
 /* Surface chrome for the consumer route on wide screens — a phone in a frame. */
-.sakhi-stage {
+.sangat-stage {
   min-height: 100%;
   background:
     radial-gradient(1200px 600px at 80% -10%, var(--rose-100) 0%, transparent 60%),
@@ -42,24 +42,24 @@ input, textarea {
     var(--bg);
 }
 
-[data-theme="dark"] .sakhi-stage {
+[data-theme="dark"] .sangat-stage {
   background:
     radial-gradient(1200px 600px at 80% -10%, rgba(232, 90, 122, 0.18) 0%, transparent 60%),
     radial-gradient(900px 500px at -10% 110%, rgba(213, 181, 221, 0.08) 0%, transparent 60%),
     var(--bg);
 }
 
-.sakhi-link-reset {
+.sangat-link-reset {
   color: inherit;
   text-decoration: none;
 }
 
-.sakhi-focus-ring:focus-visible {
+.sangat-focus-ring:focus-visible {
   outline: none;
   box-shadow: var(--shadow-focus);
 }
 
-@keyframes sakhi-install-in {
+@keyframes sangat-install-in {
   from {
     opacity: 0;
     transform: translateY(16px);

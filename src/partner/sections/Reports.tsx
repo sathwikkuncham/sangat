@@ -21,7 +21,7 @@ export function Reports() {
         }}
       >
         <BigStat label="Gross group spend · Mar" value="₹2,14,800" sub="46 confirmed groups" />
-        <BigStat label="Sakhi commission" value="₹14,820" sub="6.9% effective rate" />
+        <BigStat label="Sangat commission" value="₹14,820" sub="6.9% effective rate" />
         <BigStat label="Net to you" value="₹1,99,980" sub="Settles Mon, 16 Mar" highlight />
       </div>
 

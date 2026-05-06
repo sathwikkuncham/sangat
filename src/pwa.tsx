@@ -13,12 +13,12 @@ export function registerServiceWorker(): void {
     onRegistered(registration) {
       if (registration && import.meta.env.DEV) {
         // eslint-disable-next-line no-console
-        console.info('[sakhi] service worker registered');
+        console.info('[sangat] service worker registered');
       }
     },
     onRegisterError(error) {
       // eslint-disable-next-line no-console
-      console.warn('[sakhi] service worker registration failed', error);
+      console.warn('[sangat] service worker registration failed', error);
     },
   });
 }

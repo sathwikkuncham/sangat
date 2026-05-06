@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Sangat">
+  <rect width="64" height="64" rx="14" fill="#FBF4F2"/>
+  <g transform="translate(32 32)">
+    <g fill="#B8385A">
+      <ellipse cx="0" cy="-14" rx="5" ry="9"/>
+      <ellipse cx="0" cy="-14" rx="5" ry="9" transform="rotate(45)"/>
+      <ellipse cx="0" cy="-14" rx="5" ry="9" transform="rotate(90)"/>
+      <ellipse cx="0" cy="-14" rx="5" ry="9" transform="rotate(135)"/>
+      <ellipse cx="0" cy="-14" rx="5" ry="9" transform="rotate(180)"/>
+      <ellipse cx="0" cy="-14" rx="5" ry="9" transform="rotate(225)"/>
+      <ellipse cx="0" cy="-14" rx="5" ry="9" transform="rotate(270)"/>
+      <ellipse cx="0" cy="-14" rx="5" ry="9" transform="rotate(315)"/>
+    </g>
+    <g fill="#8E2244" opacity="0.92">
+      <ellipse cx="0" cy="-7" rx="3" ry="5" transform="rotate(22.5)"/>
+      <ellipse cx="0" cy="-7" rx="3" ry="5" transform="rotate(67.5)"/>
+      <ellipse cx="0" cy="-7" rx="3" ry="5" transform="rotate(112.5)"/>
+      <ellipse cx="0" cy="-7" rx="3" ry="5" transform="rotate(157.5)"/>
+      <ellipse cx="0" cy="-7" rx="3" ry="5" transform="rotate(202.5)"/>
+      <ellipse cx="0" cy="-7" rx="3" ry="5" transform="rotate(247.5)"/>
+      <ellipse cx="0" cy="-7" rx="3" ry="5" transform="rotate(292.5)"/>
+      <ellipse cx="0" cy="-7" rx="3" ry="5" transform="rotate(337.5)"/>
+    </g>
+    <circle cx="0" cy="0" r="4.5" fill="#511025"/>
+    <circle cx="0" cy="0" r="2" fill="#FBD0D9"/>
+  </g>
+</svg>

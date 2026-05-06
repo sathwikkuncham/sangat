@@ -36,7 +36,7 @@ export function PartiesScreen() {
                 type="button"
                 aria-selected={active}
                 onClick={() => setActiveFilter(f.id)}
-                className="sakhi-focus-ring"
+                className="sangat-focus-ring"
                 style={{
                   padding: '6px 14px',
                   borderRadius: 999,

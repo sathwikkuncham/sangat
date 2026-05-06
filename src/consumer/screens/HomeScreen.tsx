@@ -174,7 +174,7 @@ export function HomeScreen({ onOpen, onNew }: HomeScreenProps) {
         ))}
         <button
           onClick={onNew}
-          className="sakhi-focus-ring"
+          className="sangat-focus-ring"
           style={{
             padding: 18,
             border: '1.5px dashed var(--border)',

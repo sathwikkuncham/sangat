@@ -22,7 +22,7 @@ export function useMediaQuery(query: string): boolean {
   return matches;
 }
 
-/** Semantic Sakhi breakpoints. */
+/** Semantic Sangat breakpoints. */
 export const breakpoints = {
   /** Below this width, primitives switch to compact mobile layouts. */
   mobile: 720,

@@ -6,7 +6,7 @@ const settingsItems: Array<[string, string]> = [
   ['Linked banks', 'ICICI · HDFC'],
   ['Notifications', 'Reminders, draws, votes'],
   ['Language', 'English (हिन्दी available)'],
-  ['Help & disputes', 'Talk to a sakhi'],
+  ['Help & disputes', 'Talk to the sangat'],
 ];
 
 export function ProfileScreen() {
@@ -106,7 +106,7 @@ export function ProfileScreen() {
           <button
             type="button"
             onClick={toggle}
-            className="sakhi-focus-ring"
+            className="sangat-focus-ring"
             style={{
               width: '100%',
               padding: '14px 16px',

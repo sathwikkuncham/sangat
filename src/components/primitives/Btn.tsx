@@ -53,7 +53,7 @@ export function Btn({
     <button
       {...rest}
       disabled={disabled}
-      className={`sakhi-focus-ring${rest.className ? ` ${rest.className}` : ''}`}
+      className={`sangat-focus-ring${rest.className ? ` ${rest.className}` : ''}`}
       style={{
         fontFamily: 'var(--font-text)',
         fontWeight: 600,

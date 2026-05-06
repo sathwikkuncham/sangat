@@ -3,8 +3,8 @@ import { Btn, Icon } from './primitives';
 import { usePwaInstall } from '@/pwa';
 import { useIsMobile } from '@/hooks/useMediaQuery';
 
-const SNOOZE_KEY = 'sakhi.install.snoozedAt';
-const PERMANENT_KEY = 'sakhi.install.dismissed';
+const SNOOZE_KEY = 'sangat.install.snoozedAt';
+const PERMANENT_KEY = 'sangat.install.dismissed';
 const SNOOZE_DAYS = 7;
 const FIRST_RENDER_DELAY_MS = 1500;
 
@@ -98,8 +98,8 @@ export function InstallPrompt({ enabled = true }: InstallPromptProps) {
     <div
       role="dialog"
       aria-modal="false"
-      aria-labelledby="sakhi-install-title"
-      className="sakhi-install-prompt"
+      aria-labelledby="sangat-install-title"
+      className="sangat-install-prompt"
       style={{
         position: 'fixed',
         zIndex: 80,
@@ -115,12 +115,12 @@ export function InstallPrompt({ enabled = true }: InstallPromptProps) {
         display: 'flex',
         flexDirection: 'column',
         gap: 12,
-        animation: 'sakhi-install-in 320ms cubic-bezier(.2,.7,.2,1)',
+        animation: 'sangat-install-in 320ms cubic-bezier(.2,.7,.2,1)',
       }}
     >
       <header style={{ display: 'flex', alignItems: 'flex-start', gap: 12 }}>
         <img
-          src="/assets/logo/sakhi-mark.svg"
+          src="/assets/logo/sangat-mark.svg"
           width={36}
           height={36}
           alt=""
@@ -128,10 +128,10 @@ export function InstallPrompt({ enabled = true }: InstallPromptProps) {
         />
         <div style={{ flex: 1, minWidth: 0 }}>
           <div className="eyebrow" style={{ fontSize: 10, color: 'var(--plum-700)' }}>
-            INSTALL SAKHI
+            INSTALL SANGAT
           </div>
           <h3
-            id="sakhi-install-title"
+            id="sangat-install-title"
             style={{
               margin: '2px 0 0',
               fontFamily: 'var(--font-display)',
@@ -142,14 +142,14 @@ export function InstallPrompt({ enabled = true }: InstallPromptProps) {
               lineHeight: 1.2,
             }}
           >
-            Keep Sakhi a tap away
+            Keep Sangat a tap away
           </h3>
         </div>
         <button
           type="button"
           aria-label="Close install prompt"
           onClick={() => dismiss(false)}
-          className="sakhi-focus-ring"
+          className="sangat-focus-ring"
           style={{
             width: 28,
             height: 28,
@@ -176,7 +176,7 @@ export function InstallPrompt({ enabled = true }: InstallPromptProps) {
           color: 'var(--fg-2)',
         }}
       >
-        Add Sakhi to your home screen to get reminders, draws, and party RSVPs without opening the
+        Add Sangat to your home screen to get reminders, draws, and party RSVPs without opening the
         browser.
       </p>
 
@@ -195,7 +195,7 @@ export function InstallPrompt({ enabled = true }: InstallPromptProps) {
             Tap the <ShareGlyph /> share icon in Safari's toolbar.
           </IosStep>
           <IosStep n={2}>Choose "Add to Home Screen".</IosStep>
-          <IosStep n={3}>Confirm to drop the Sakhi mark on your home screen.</IosStep>
+          <IosStep n={3}>Confirm to drop the Sangat mark on your home screen.</IosStep>
         </ol>
       ) : null}
 
@@ -219,14 +219,14 @@ export function InstallPrompt({ enabled = true }: InstallPromptProps) {
                 width: '100%',
               }}
             >
-              <Icon name="arrow-down" size={14} strokeWidth={2.2} /> Install Sakhi
+              <Icon name="arrow-down" size={14} strokeWidth={2.2} /> Install Sangat
             </span>
           </Btn>
         )}
         <button
           type="button"
           onClick={() => dismiss(false)}
-          className="sakhi-focus-ring"
+          className="sangat-focus-ring"
           style={{
             padding: '8px 14px',
             background: 'transparent',
@@ -243,7 +243,7 @@ export function InstallPrompt({ enabled = true }: InstallPromptProps) {
         <button
           type="button"
           onClick={() => dismiss(true)}
-          className="sakhi-focus-ring"
+          className="sangat-focus-ring"
           style={{
             padding: '8px 4px',
             background: 'transparent',

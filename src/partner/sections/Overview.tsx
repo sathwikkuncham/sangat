@@ -270,7 +270,7 @@ function UpcomingRow({ booking: u, last }: { booking: UpcomingBooking; last: boo
       </Pill>
       <button
         type="button"
-        className="sakhi-focus-ring"
+        className="sangat-focus-ring"
         style={{
           padding: '6px 12px',
           fontSize: 12,
@@ -330,7 +330,7 @@ function UpcomingCard({ booking: u, last }: { booking: UpcomingBooking; last: bo
       </div>
       <button
         type="button"
-        className="sakhi-focus-ring"
+        className="sangat-focus-ring"
         style={{
           marginTop: 4,
           alignSelf: 'flex-start',
@@ -369,7 +369,7 @@ function ActionRow({ title, sub }: { title: string; sub: string }) {
       </div>
       <button
         type="button"
-        className="sakhi-focus-ring"
+        className="sangat-focus-ring"
         style={{
           padding: '4px 10px',
           fontSize: 11,

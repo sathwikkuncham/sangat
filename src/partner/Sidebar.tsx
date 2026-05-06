@@ -86,7 +86,7 @@ export function Sidebar({ active, onChange, asDrawer = false, open = false, onCl
           marginBottom: 12,
         }}
       >
-        <img src="/assets/logo/sakhi-mark.svg" width={32} height={32} alt="Sakhi" />
+        <img src="/assets/logo/sangat-mark.svg" width={32} height={32} alt="Sangat" />
         <div style={{ flex: 1 }}>
           <div
             style={{
@@ -99,7 +99,7 @@ export function Sidebar({ active, onChange, asDrawer = false, open = false, onCl
               color: 'var(--fg-1)',
             }}
           >
-            sakhi
+            sangat
           </div>
           <div
             style={{
@@ -117,7 +117,7 @@ export function Sidebar({ active, onChange, asDrawer = false, open = false, onCl
             type="button"
             aria-label="Close menu"
             onClick={onClose}
-            className="sakhi-focus-ring"
+            className="sangat-focus-ring"
             style={{
               width: 32,
               height: 32,
@@ -146,7 +146,7 @@ export function Sidebar({ active, onChange, asDrawer = false, open = false, onCl
                 if (asDrawer) onClose?.();
               }}
               aria-current={isActive ? 'page' : undefined}
-              className="sakhi-focus-ring"
+              className="sangat-focus-ring"
               style={{
                 textAlign: 'left',
                 padding: '10px 12px',
@@ -173,7 +173,7 @@ export function Sidebar({ active, onChange, asDrawer = false, open = false, onCl
       <button
         type="button"
         onClick={toggle}
-        className="sakhi-focus-ring"
+        className="sangat-focus-ring"
         style={{
           marginTop: 12,
           padding: '8px 12px',

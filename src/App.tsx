@@ -3,7 +3,6 @@ import { ThemeProvider } from './theme';
 import { Landing } from './routes/Landing';
 import { ConsumerRoute } from './routes/ConsumerRoute';
 import { PartnerRoute } from './routes/PartnerRoute';
-import { BrandOptions } from './routes/BrandOptions';
 import { InstallPrompt } from './components/InstallPrompt';
 
 export function App() {
@@ -14,7 +13,6 @@ export function App() {
           <Route path="/" element={<Landing />} />
           <Route path="/app" element={<ConsumerRoute />} />
           <Route path="/partner" element={<PartnerRoute />} />
-          <Route path="/brand" element={<BrandOptions />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
         <RouteAwareInstallPrompt />
@@ -25,7 +23,7 @@ export function App() {
 
 function RouteAwareInstallPrompt() {
   const { pathname } = useLocation();
-  // Skip the install pitch on routes that aren't the consumer experience.
-  const enabled = !pathname.startsWith('/partner') && !pathname.startsWith('/brand');
+  // The partner dashboard isn't an installable consumer surface, so we skip the install pitch there.
+  const enabled = !pathname.startsWith('/partner');
   return <InstallPrompt enabled={enabled} />;
 }

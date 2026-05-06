@@ -148,5 +148,5 @@ export const walletTxs: WalletTx[] = [
   { t: 'Saffron Trail · Saturday lunch', m: 'Mar 8 · escrow hold', amt: '−₹450', tone: 'warning' },
   { t: 'Cousins kitty disbursal', m: 'Mar 1 · received', amt: '+₹30,000', tone: 'success' },
   { t: 'Refund · Karavalli (cancelled)', m: 'Feb 24', amt: '+₹650', tone: 'success' },
-  { t: 'Sakhi Gold purchase', m: 'Feb 18 · 0.5g', amt: '−₹3,400', tone: 'warning' },
+  { t: 'Sangat Gold purchase', m: 'Feb 18 · 0.5g', amt: '−₹3,400', tone: 'warning' },
 ];

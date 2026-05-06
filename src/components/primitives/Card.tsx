@@ -32,7 +32,7 @@ export function Card({ children, variant = 'default', style, onClick }: CardProp
             }
           : undefined
       }
-      className={interactive ? 'sakhi-focus-ring' : undefined}
+      className={interactive ? 'sangat-focus-ring' : undefined}
       style={{
         border: '1px solid var(--border)',
         borderRadius: 'var(--r-md)',

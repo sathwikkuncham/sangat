@@ -93,7 +93,7 @@ export function NewKittyScreen({ onBack, onDone }: NewKittyScreenProps) {
         {step === 2 && (
           <>
             <h2 style={stepHeading}>Contribution &amp; members</h2>
-            <p className="p-small">How much each month, and how many sakhi-s?</p>
+            <p className="p-small">How much each month, and how many members?</p>
             <div className="label" style={{ marginTop: 16 }}>Monthly contribution</div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginTop: 8 }}>
               <span
@@ -167,7 +167,7 @@ export function NewKittyScreen({ onBack, onDone }: NewKittyScreenProps) {
 
         {step === 3 && (
           <>
-            <h2 style={stepHeading}>Invite your sakhi-s</h2>
+            <h2 style={stepHeading}>Invite your members</h2>
             <p className="p-small">
               Add by phone or share a link. Everyone gets a one-tap KYC flow before they can
               contribute.
@@ -186,7 +186,7 @@ export function NewKittyScreen({ onBack, onDone }: NewKittyScreenProps) {
               <div style={{ fontWeight: 600, fontSize: 14, marginTop: 8, color: 'var(--fg-1)' }}>
                 Share invite QR
               </div>
-              <div style={{ fontSize: 12, color: 'var(--fg-2)', marginTop: 4 }}>sakhi.in/j/8f3m2</div>
+              <div style={{ fontSize: 12, color: 'var(--fg-2)', marginTop: 4 }}>sangat.in/j/8f3m2</div>
             </div>
           </>
         )}

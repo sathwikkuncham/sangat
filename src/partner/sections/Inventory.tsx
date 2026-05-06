@@ -12,7 +12,7 @@ export function Inventory() {
       <h1 style={{ margin: '4px 0 12px' }}>Off-peak inventory</h1>
       <p className="p-small" style={{ marginTop: 0, maxWidth: 640 }}>
         Set the discount or commission you'll offer for confirmed group bookings in each slot.
-        Sakhi only fills these from groups of 6+ members.
+        Sangat only fills these from groups of 6+ members.
       </p>
 
       {isMobile ? (
