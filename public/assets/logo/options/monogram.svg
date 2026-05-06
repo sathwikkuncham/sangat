@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Monogram">
+  <rect width="64" height="64" rx="14" fill="#B8385A"/>
+  <text
+    x="32"
+    y="46"
+    text-anchor="middle"
+    font-family="Fraunces, 'Tiempos Headline', Georgia, serif"
+    font-size="38"
+    font-weight="500"
+    font-style="italic"
+    fill="#FBF4F2"
+  >m</text>
+</svg>

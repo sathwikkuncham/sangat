@@ -54,6 +54,7 @@ export function InstallPrompt({ enabled = true }: InstallPromptProps) {
     if (!enabled) return false;
     if (isStandalone()) return false;
     if (!shouldShowDueToHistory()) return false;
+    if (typeof window !== 'undefined' && window.location.pathname === '/brand') return false;
     return true;
   }, [enabled]);
 

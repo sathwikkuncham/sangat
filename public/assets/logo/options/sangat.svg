@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Sangat">
+  <rect width="64" height="64" rx="14" fill="#FBF4F2"/>
+  <g fill="none" stroke-width="2.8">
+    <circle cx="32" cy="22" r="11" stroke="#8E2244"/>
+    <circle cx="22" cy="40" r="11" stroke="#B8385A"/>
+    <circle cx="42" cy="40" r="11" stroke="#75428A"/>
+  </g>
+</svg>
