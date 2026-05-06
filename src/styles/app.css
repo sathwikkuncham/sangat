@@ -1,0 +1,68 @@
+/* =========================================================================
+   App-level layout helpers — built on the Sakhi design tokens.
+   ========================================================================= */
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg-1);
+  font-family: var(--font-text);
+}
+
+button {
+  font-family: inherit;
+}
+
+input, textarea {
+  font-family: inherit;
+  color: inherit;
+}
+
+/* Hide scrollbars on scrollable mobile surfaces while keeping behaviour. */
+.sakhi-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: var(--ink-300) transparent;
+}
+.sakhi-scroll::-webkit-scrollbar { width: 6px; height: 6px; }
+.sakhi-scroll::-webkit-scrollbar-track { background: transparent; }
+.sakhi-scroll::-webkit-scrollbar-thumb {
+  background: var(--ink-300);
+  border-radius: 999px;
+}
+
+/* Surface chrome for the consumer route on wide screens — a phone in a frame. */
+.sakhi-stage {
+  min-height: 100%;
+  background:
+    radial-gradient(1200px 600px at 80% -10%, var(--rose-100) 0%, transparent 60%),
+    radial-gradient(900px 500px at -10% 110%, var(--plum-50) 0%, transparent 60%),
+    var(--bg);
+}
+
+[data-theme="dark"] .sakhi-stage {
+  background:
+    radial-gradient(1200px 600px at 80% -10%, rgba(232, 90, 122, 0.18) 0%, transparent 60%),
+    radial-gradient(900px 500px at -10% 110%, rgba(213, 181, 221, 0.08) 0%, transparent 60%),
+    var(--bg);
+}
+
+.sakhi-link-reset {
+  color: inherit;
+  text-decoration: none;
+}
+
+.sakhi-focus-ring:focus-visible {
+  outline: none;
+  box-shadow: var(--shadow-focus);
+}
+
+/* Reduced motion respects the user. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

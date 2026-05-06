@@ -1,0 +1,373 @@
+/* =========================================================================
+   Sakhi — colours, type, spacing, radius, shadow
+   Single source of truth for visual tokens.
+   ========================================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap');
+
+:root {
+  /* -----------------------------------------------------------------------
+     COLOUR
+  ----------------------------------------------------------------------- */
+
+  /* Rose — primary brand (deep rose) */
+  --rose-50:   #FCEEEF;
+  --rose-100:  #F8D7DC;
+  --rose-200:  #EFA8B4;
+  --rose-400:  #D86A82;
+  --rose-600:  #B8385A;   /* hero */
+  --rose-700:  #8E2244;
+  --rose-900:  #511025;
+
+  /* Plum — celebratory + data accent */
+  --plum-50:   #EFE3F0;
+  --plum-300:  #9C6CA8;
+  --plum-500:  #75428A;
+  --plum-700:  #5A2A6E;
+  --plum-900:  #2E1239;
+
+  /* Legacy aliases — keep saffron/henna/peacock pointing to rose/plum so existing
+     preview cards and JSX components keep rendering without churn. */
+  --saffron-50:  var(--rose-50);
+  --saffron-100: var(--rose-100);
+  --saffron-200: var(--rose-200);
+  --saffron-400: var(--rose-400);
+  --saffron-600: var(--rose-600);
+  --saffron-700: var(--rose-700);
+  --saffron-900: var(--rose-900);
+  --henna-50:    var(--rose-50);
+  --henna-300:   var(--rose-400);
+  --henna-500:   var(--rose-600);
+  --henna-700:   var(--plum-700);
+  --henna-900:   var(--plum-900);
+  --peacock-50:  var(--plum-50);
+  --peacock-300: var(--plum-300);
+  --peacock-500: var(--plum-500);
+  --peacock-700: var(--plum-700);
+  --peacock-900: var(--plum-900);
+
+  /* Ink — type & strokes (warm rose-tinted neutrals) */
+  --ink-900: #1A1310;
+  --ink-800: #2A1F1C;
+  --ink-700: #3F312D;
+  --ink-600: #5A4843;
+  --ink-500: #7A6661;
+  --ink-400: #9E8782;
+  --ink-300: #CCB4AE;
+  --ink-200: #E5D2CC;
+  --ink-100: #F0E2DD;
+
+  /* Cream — surfaces (rose-warm) */
+  --paper:     #FFFFFF;
+  --cream-50:  #FBF4F2;
+  --cream-100: #F4E7E4;
+  --cream-200: #EBD3CD;
+
+  /* Semantic */
+  --success-50:  #E7F1E9;
+  --success-600: #3F7D4E;
+  --success-700: #2E5F3B;
+
+  --warning-50:  #FBF1DA;
+  --warning-600: #C18A1A;
+  --warning-700: #8E6310;
+
+  --danger-50:   #F7E2DD;
+  --danger-600:  #B43A2A;
+  --danger-700:  #862516;
+
+  /* Semantic role aliases (LIGHT theme — default) */
+  --bg:         var(--cream-50);
+  --bg-elev-1:  var(--paper);
+  --bg-elev-2:  var(--cream-100);
+  --fg-1:       var(--ink-900);   /* primary text */
+  --fg-2:       var(--ink-600);   /* secondary text */
+  --fg-3:       var(--ink-400);   /* tertiary text, placeholder */
+  --border:     var(--ink-300);
+  --border-strong: var(--ink-400);
+  --primary:    var(--rose-600);
+  --primary-hover: var(--rose-700);
+  --on-primary: #FFFFFF;
+  --link:       var(--plum-700);
+  --scrim:      rgba(26,19,16,.55);
+
+  /* -----------------------------------------------------------------------
+     TYPE
+  ----------------------------------------------------------------------- */
+
+  --font-display: 'Fraunces', 'Tiempos Headline', Georgia, serif;
+  --font-text:    'Inter', 'Helvetica Neue', system-ui, sans-serif;
+  --font-deva:    'Noto Sans Devanagari', 'Inter', sans-serif;
+  --font-mono:    ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
+  /* Type scale (px) */
+  --t-12: 0.75rem;
+  --t-13: 0.8125rem;
+  --t-14: 0.875rem;
+  --t-15: 0.9375rem;
+  --t-16: 1rem;
+  --t-18: 1.125rem;
+  --t-20: 1.25rem;
+  --t-24: 1.5rem;
+  --t-28: 1.75rem;
+  --t-32: 2rem;
+  --t-40: 2.5rem;
+  --t-52: 3.25rem;
+  --t-64: 4rem;
+
+  /* -----------------------------------------------------------------------
+     SPACING — 8pt grid
+  ----------------------------------------------------------------------- */
+  --s-0: 0;
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+  --s-8: 64px;
+  --s-9: 96px;
+
+  /* -----------------------------------------------------------------------
+     RADII
+  ----------------------------------------------------------------------- */
+  --r-xs: 6px;
+  --r-sm: 10px;
+  --r-md: 12px;
+  --r-lg: 20px;
+  --r-xl: 28px;
+  --r-pill: 999px;
+
+  /* -----------------------------------------------------------------------
+     SHADOWS — flat-ish, warm
+  ----------------------------------------------------------------------- */
+  --shadow-1: 0 1px 0 rgba(28,26,23,.04), 0 1px 2px rgba(28,26,23,.04);
+  --shadow-2: 0 6px 20px -8px rgba(28,26,23,.12), 0 2px 4px rgba(28,26,23,.04);
+  --shadow-3: 0 24px 48px -12px rgba(28,26,23,.18), 0 8px 16px -8px rgba(28,26,23,.10);
+  --shadow-focus: 0 0 0 3px rgba(184,56,90,.28);
+
+  /* -----------------------------------------------------------------------
+     MOTION
+  ----------------------------------------------------------------------- */
+  --ease-out: cubic-bezier(.2,.7,.2,1);
+  --ease-in:  cubic-bezier(.6,.0,.8,.2);
+  --dur-1: 120ms;
+  --dur-2: 180ms;
+  --dur-3: 260ms;
+  --dur-4: 320ms;
+}
+
+/* =========================================================================
+   SEMANTIC TYPE — apply directly to elements
+   ========================================================================= */
+
+.h-display {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: var(--t-64);
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  color: var(--fg-1);
+  font-variation-settings: 'opsz' 144;
+}
+
+h1, .h1 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: var(--t-40);
+  line-height: 1.08;
+  letter-spacing: -0.018em;
+  color: var(--fg-1);
+  font-variation-settings: 'opsz' 96;
+}
+
+h2, .h2 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: var(--t-28);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: var(--fg-1);
+  font-variation-settings: 'opsz' 48;
+}
+
+h3, .h3 {
+  font-family: var(--font-text);
+  font-weight: 600;
+  font-size: var(--t-20);
+  line-height: 1.25;
+  letter-spacing: -0.003em;
+  color: var(--fg-1);
+}
+
+h4, .h4 {
+  font-family: var(--font-text);
+  font-weight: 600;
+  font-size: var(--t-16);
+  line-height: 1.3;
+  color: var(--fg-1);
+}
+
+.eyebrow {
+  font-family: var(--font-text);
+  font-weight: 600;
+  font-size: var(--t-12);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--peacock-700);
+}
+
+p, .p {
+  font-family: var(--font-text);
+  font-weight: 400;
+  font-size: var(--t-16);
+  line-height: 1.55;
+  color: var(--fg-1);
+  text-wrap: pretty;
+}
+
+.p-lead {
+  font-family: var(--font-text);
+  font-weight: 400;
+  font-size: var(--t-18);
+  line-height: 1.5;
+  color: var(--fg-1);
+}
+
+.p-small {
+  font-family: var(--font-text);
+  font-weight: 400;
+  font-size: var(--t-14);
+  line-height: 1.5;
+  color: var(--fg-2);
+}
+
+.label {
+  font-family: var(--font-text);
+  font-weight: 500;
+  font-size: var(--t-13);
+  line-height: 1.3;
+  color: var(--fg-2);
+}
+
+.caption {
+  font-family: var(--font-text);
+  font-weight: 400;
+  font-size: var(--t-12);
+  line-height: 1.4;
+  color: var(--fg-3);
+}
+
+.numeric {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-feature-settings: 'tnum', 'lnum';
+  font-variation-settings: 'opsz' 144;
+  letter-spacing: -0.01em;
+}
+
+.mono, code, kbd {
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+}
+
+/* =========================================================================
+   BASE
+   ========================================================================= */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg-1);
+  font-family: var(--font-text);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { color: var(--peacock-900); }
+
+::selection { background: var(--rose-200); color: var(--ink-900); }
+
+/* =========================================================================
+   DARK THEME — Rose & Plum, after-hours
+   Apply via [data-theme="dark"] on any container (html, body, or a wrapper).
+   Overrides only the SEMANTIC role tokens — all components reading --bg,
+   --fg-1, --primary, etc. flip automatically.
+   ========================================================================= */
+[data-theme="dark"] {
+  /* Surfaces — deep rose-tinted near-black */
+  --bg:         #160F11;
+  --bg-elev-1:  #1F171A;   /* card */
+  --bg-elev-2:  #2A2024;   /* card secondary */
+  --paper:      #1F171A;
+  --cream-50:   #160F11;
+  --cream-100:  #2A2024;
+  --cream-200:  #382B30;
+
+  /* Inverted ink scale — light text on dark */
+  --ink-100: #2A2024;
+  --ink-200: #382B30;
+  --ink-300: #4A3A40;
+  --ink-400: #6E5B62;
+  --ink-500: #8E7A82;
+  --ink-600: #B0A0A6;
+  --ink-700: #D0C5C9;
+  --ink-800: #E8E0E3;
+  --ink-900: #F6F1F3;
+
+  /* Brand — slightly lifted for AA contrast on dark */
+  --rose-50:   #3A1820;
+  --rose-100:  #5C2236;
+  --rose-200:  #8E3050;
+  --rose-400:  #D86A82;
+  --rose-600:  #E85A7A;   /* hero on dark */
+  --rose-700:  #F2849C;
+  --rose-900:  #FBD0D9;
+
+  --plum-50:   #2A1230;
+  --plum-300:  #B894C2;
+  --plum-500:  #D5B5DD;
+  --plum-700:  #C599D0;   /* link on dark */
+  --plum-900:  #EDD8F0;
+
+  /* Legacy aliases re-resolve through the rose/plum overrides above. */
+
+  /* Roles */
+  --fg-1: var(--ink-900);
+  --fg-2: var(--ink-600);
+  --fg-3: var(--ink-400);
+  --border: var(--ink-300);
+  --border-strong: var(--ink-400);
+  --primary: var(--rose-600);
+  --primary-hover: var(--rose-700);
+  --on-primary: #1A0F12;
+  --link: var(--plum-700);
+  --scrim: rgba(0,0,0,.7);
+
+  /* Semantic — slightly desaturated/lifted */
+  --success-50:  #16321F;
+  --success-600: #6FB785;
+  --success-700: #9BD2AA;
+  --warning-50:  #3A2A0E;
+  --warning-600: #E5B952;
+  --warning-700: #F2D284;
+  --danger-50:   #3A1A14;
+  --danger-600:  #E58572;
+  --danger-700:  #F2A899;
+
+  /* Shadows are mostly invisible on dark — swap for thin lifts */
+  --shadow-1: 0 0 0 1px rgba(255,255,255,.04);
+  --shadow-2: 0 8px 24px -8px rgba(0,0,0,.5), 0 0 0 1px rgba(255,255,255,.04);
+  --shadow-3: 0 32px 64px -16px rgba(0,0,0,.7), 0 0 0 1px rgba(255,255,255,.06);
+  --shadow-focus: 0 0 0 3px rgba(232,90,122,.4);
+}
+
+[data-theme="dark"] ::selection { background: var(--rose-400); color: #1A0F12; }
+
+/* Optional: respect system preference if no explicit theme is set. */
+@media (prefers-color-scheme: dark) {
+  :root[data-theme="auto"] { /* user opt-in via data-theme="auto" */ }
+}
